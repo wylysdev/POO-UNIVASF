@@ -61,10 +61,7 @@ void cubo_destroy(Cubo *cubo_local){
 }
 
 float area(Cubo *cubo){
-    if(cubo){
-        float area = (cubo->aresta) * 6;
-        return area;
-    }
-    printf("Pane");
+    if(cubo)
+        return (cubo->aresta) * 6;
     return 0.0;
 }
